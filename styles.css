@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0fbfc;
+    /* background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 121 167)); */
+}
+
+.container {
+    height: 64vh;
+    /* max-height: 64vh; */
+    color: white;
+    /* border: 4px solid #b0e9ff; */
+    width: 50vw;
+    background-color: #253237;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #595959;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    /* color: black; */
+    font-family: monospace;
+    font-size: 14px;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #c2dfe3;
+    color: #252525;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9db4c0;
+}
+
+ul {
+    overflow-y: scroll;
+    height: 77%;
+    /* max-height: 55%; */
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: #595959;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.completed {
+    text-decoration: line-through; /* Applies the line-through style */
+    color: #888; /* Optional: Change the color for completed tasks */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button.delete-btn {
+    color: #de0000;
+    width: 50%;
+    /* background-color: #dc3545; */
+}
+
+button.delete-btn:hover {
+    box-shadow: 0px 0px 0px 1px rgb(255 12 12);
+    /* border: 2px solid red; */
+    /* background-color: #c82333; */
+}
+
+button.complete-btn {
+    width: 50%;
+    color: #878731;
+    /* background-color: #ffc107; */
+}
+
+button.complete-btn:hover {
+    /* background-color: #e0a800; */
+}
+
+.footer{
+    position: absolute;
+    background-color: #252525;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 46px;
+    /* padding: 0px 7px; */
+}
